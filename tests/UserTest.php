@@ -1,16 +1,11 @@
 <?php
-class UserTest extends PHPUnit_Framework_Testcase{
-	public function __construct(){
-		include 'User.php';
+class UserTest extends PHPUnit_Framework_TestCase{
+	function __construct(){
+		include 'src/user.php';
 	}
-	public function testSetName(){
-	 	$u=new User();
-	 	$u->setName("sarath");
-	 	$this->assertTrue("sarath"===$u->getName());
-	 }
-	public function testSetAge(){
+	function testGetName(){
 		$u=new User();
-		$u->setAge(230)->setName("Sarath");
-		$this->assertTrue(22===$u->getAge());
+		$u->setName('Sarath');
+		$this->assertEquals('Sarath',$u->getName(),'Name ok');
 	}
 }
