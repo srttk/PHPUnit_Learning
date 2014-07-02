@@ -1,9 +1,17 @@
 <?php
+include 'src/user.php';
 class UserTest extends PHPUnit_Framework_TestCase{
 	function __construct(){
-		include 'src/user.php';
+		
 	}
-	function testGetName(){
+
+	/* assertTrue() Exampel */
+	 public function testSetName(){
+	 	$a=new User();
+	 	$this->assertTrue($a->setName('Sarath')==true);
+	 }
+	/* assertEquals() Example */
+	public function testGetName(){
 		$u=new User();
 		$u->setName('Sarath');
 		$this->assertEquals('Sarath',$u->getName(),'Name ok');
