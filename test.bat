@@ -1,4 +1,8 @@
-@echo OFF.
+REM July-12-2014
+REM PHPUnit Learning
+REM 
+echo off
 cls
-phpunit --bootstrap="src/autload.php" tests
+REM phpunit --bootstrap="src/autoload.php" tests
+phpunit --bootstrap="src/autoload.php" tests
 pause
