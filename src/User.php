@@ -1,5 +1,4 @@
 <?php
-
 class User{
 	public $name=null;
 	public $age=null;
