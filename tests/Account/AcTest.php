@@ -1,5 +1,5 @@
 <?php
-include 'src/autoload.php';
+
 class AcTest extends PHPUnit_Framework_TestCase{
 
 	public function testIsActive(){
