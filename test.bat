@@ -3,6 +3,6 @@ REM PHPUnit Learning
 REM 
 echo off
 cls
-REM phpunit --bootstrap="src/autoload.php" tests
-phpunit --bootstrap="src/autoload.php" tests
+REM phpunit --bootstrap="vendor/autoload.php" tests
+phpunit --bootstrap="vendor/autoload.php" tests
 pause

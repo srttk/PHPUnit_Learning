@@ -1,4 +1,6 @@
-<phpunit bootstrap="src/autoload.php"
+<phpunit bootstrap="vendor/autoload.php"
 		 color="true"
+
+		 
 >
 </phpunit>
